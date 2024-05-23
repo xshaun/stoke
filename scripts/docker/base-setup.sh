@@ -14,9 +14,7 @@ apt-get update && apt-get install -y \
   doxygen \
   exuberant-ctags \
   flex \
-  g++-4.9 \
   g++-multilib \
-  gcc-4.9 \
   ghc \
   git \
   libantlr3c-dev \
@@ -51,7 +49,7 @@ sed -i "s/stoke:.*/stoke:\$1\$bXW0K4Te\$5UHZQ8CHFS\/RkwfnN6.FS.:17947:0:99999:7:
 usermod -a -G sudo stoke
 
 # gcc setup
-update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.9
+#update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.9
 
 # Compile everything, etc.
 chown -R stoke /home/stoke/base
